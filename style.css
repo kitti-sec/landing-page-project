@@ -1,10 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto&display=swap');
 
+/* 
+Color selection
+Main #3AA191
+blue #39A8B8
+darkblue #367FAD
+lightgreen #39B881
+strong green #36AD58
+text grey #303030
+almost white bg color #ededed
+greyer bg color #dddddd
+*/
+
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #ededed;
     margin: 0;
     font-size: 100%; 
+    color: #303030;
 }
 /* ///// NAV //// */
 nav {
@@ -45,6 +58,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 60vh;
+    margin: 0;
+    padding: 0;
 }
 
 .introRight {
@@ -52,28 +67,30 @@ nav {
     margin: 10px 100px 10px 10px;
     flex: 1;
     max-width: 700px;
-    min-width: 300px;
+    min-width: 100px;
 }
 
 .introLeft {
     padding: 0px;
     margin: 40px 10px 40px 100px;
     flex: 2;
+    max-width: 700px;
+    min-width: 300px;
     
 }
 .introLeft h1 {
-    font-size: 4vw;
+    font-size: min(4vw, 50px);
 }
 .introLeft p {
-   font-size: 2vw; 
+    font-size: min(2vw, 40px);
 }
 .introLeft button {
-    font-size: 2vw; 
-    border: 3px solid #39A8B8;
+    font-size: min(2vw, 40px);
+    border: 3px solid #3AA191;
     padding: 10px 20px;
     border-radius: 7px;
     cursor: pointer;
-    background-color: #39A8B8;
+    background-color: #3AA191;
     font-weight: bold;
 
  }
@@ -81,8 +98,67 @@ nav {
     border: 3px solid #000000;
  }
 
-
-.section1.images {
-    width: 300px;
+/* IMAGES SECTION */
+.showImages {
+    background-color: #367FAD;
+    margin: 0;
+    padding: 0;
+    height: 550px;
 }
 
+.imagesReel {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px 40px 100px;
+    margin: 0;
+}
+.imageReelTitle {
+    margin: 0;
+    padding: 40px 10px 40px 100px;
+}
+
+.section1.images {
+    max-width: 400px;
+    width: 90%;
+    border-radius: 10%;
+}
+.section1.text {
+    max-width: 400px;
+    width: 90%;
+}
+@media only screen and (max-width: 1260px) {
+    .imagesReel {
+        flex-wrap: wrap;
+    }
+    .showImages {
+        height: auto;
+    }
+  }
+
+  /* //// QUOTE SECTION //// */
+.quoteSection {
+    background-color: #dddddd;
+    margin: 0;
+    padding: 0;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.quote {
+    padding: 20px;
+    margin: 0;
+    max-width: 800px;
+    font-size: min(2vw, 25px);
+}
+#author {
+    font-size: min(1.6vw, 20px);
+    position: absolute;
+    right: 300px;
+    top: 400px;
+}
