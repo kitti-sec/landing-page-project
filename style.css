@@ -120,6 +120,8 @@ nav {
 .imageReelTitle {
     margin: 0;
     padding: 40px 10px 40px 100px;
+    color: white;
+    text-align: center;
 }
 
 .section1.images {
@@ -132,6 +134,7 @@ nav {
     width: 90%;
     text-align: center;
     font-size: min(1.5vw, 20px);
+    color: white;
 }
 @media only screen and (max-width: 1260px) {
     .imagesReel {
