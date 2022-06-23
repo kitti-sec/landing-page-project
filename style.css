@@ -58,7 +58,7 @@ nav {
 .introduction {
     display: flex;
     background-color: #dddddd;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     height: 60vh;
     margin: 0;
