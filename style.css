@@ -4,7 +4,9 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #ededed;
     margin: 0;
+    font-size: 100%; 
 }
+/* ///// NAV //// */
 nav {
     display: flex;
     justify-content: space-between;
@@ -17,10 +19,10 @@ nav {
     display: flex;
     list-style-type: none;
     gap: 20px;
-    font-size: 1.3em;
+    
     padding: 0;
     margin: 10px 100px 10px 10px;
-    color: #303030;
+
     
 }
 #logo {
@@ -31,3 +33,56 @@ nav {
     padding: 0px;
     margin: 10px 10px 10px 100px;
 }
+.menu {
+    text-decoration: none;
+    color: #303030;
+    font-size: 1.3em;
+}
+/* ///// Introduction - Header  //// */
+.introduction {
+    display: flex;
+    background-color: #dddddd;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+}
+
+.introRight {
+    padding: 0;
+    margin: 10px 100px 10px 10px;
+    flex: 1;
+    max-width: 700px;
+    min-width: 300px;
+}
+
+.introLeft {
+    padding: 0px;
+    margin: 40px 10px 40px 100px;
+    flex: 2;
+    
+}
+.introLeft h1 {
+    font-size: 4vw;
+}
+.introLeft p {
+   font-size: 2vw; 
+}
+.introLeft button {
+    font-size: 2vw; 
+    border: 3px solid #39A8B8;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #39A8B8;
+    font-weight: bold;
+
+ }
+ .introLeft button:hover {
+    border: 3px solid #000000;
+ }
+
+
+.section1.images {
+    width: 300px;
+}
+
