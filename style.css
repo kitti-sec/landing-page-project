@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Roboto&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ededed;
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3AA191;
+    margin: 0;
+    padding: 0;
+}
+.navmenu {
+    display: flex;
+    list-style-type: none;
+    gap: 20px;
+    font-size: 1.3em;
+    padding: 0;
+    margin: 10px 100px 10px 10px;
+    color: #303030;
+    
+}
+#logo {
+    text-decoration: none;
+    font-size: 40px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #303030;
+    padding: 0px;
+    margin: 10px 10px 10px 100px;
+}
