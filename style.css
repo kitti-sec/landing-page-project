@@ -51,6 +51,9 @@ nav {
     color: #303030;
     font-size: 1.3em;
 }
+.menu:hover {
+    color: white;
+}
 /* ///// Introduction - Header  //// */
 .introduction {
     display: flex;
@@ -74,7 +77,7 @@ nav {
     padding: 0px;
     margin: 40px 10px 40px 100px;
     flex: 2;
-    max-width: 700px;
+    max-width: 600px;
     min-width: 300px;
     
 }
@@ -127,6 +130,8 @@ nav {
 .section1.text {
     max-width: 400px;
     width: 90%;
+    text-align: center;
+    font-size: min(1.5vw, 20px);
 }
 @media only screen and (max-width: 1260px) {
     .imagesReel {
@@ -138,9 +143,10 @@ nav {
   }
 
   /* //// QUOTE SECTION //// */
+
 .quoteSection {
     background-color: #dddddd;
-    margin: 0;
+    margin: 0 0 0px 0;
     padding: 0;
     height: 550px;
 
@@ -161,4 +167,52 @@ nav {
     position: absolute;
     right: 300px;
     top: 400px;
+}
+
+/* ///// CALL TO ACTION //// */
+.whitespace {
+    height: 400px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.actionSection {
+    background-color: #39B881;
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+
+}
+h3.action {
+    font-size: min(1.6vw, 25px);
+}
+p.action {
+    font-size: min(1.2vw, 20px);
+}
+.actionSection div {
+    width: 50%;
+}
+.actionbutton {
+    font-size: min(1.8vw, 30px);
+    border: 3px solid #FFF;
+    padding: 10px 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #FFF;
+    font-weight: bold;
+}
+.actionbutton:hover {
+    border: 3px solid #000;
+}
+
+footer {
+    background-color: #dddddd;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

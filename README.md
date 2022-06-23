@@ -1,1 +1,1 @@
-This is a basic landing page project created using html and CSS for the purpose of practice.
+This is a basic landing page project created using html and CSS for the purpose of practice. The site is half responsive.
